@@ -17,17 +17,17 @@ const getTotalCasesByDay = require('./get-total-cases-by-day.js')
 const differentInTotalCasesBetweenTwoDays = require('./different-in-total-cases-between-two-days.js')
 const differentInNewCasesBetweenTwoDays = require('./different-in-new-cases-between-two-days.js')
 
-// let length = array2DData.length
-// console.log({length}) //-> 197
-// // when there is no user input, throw this instruction
+
+// when there is no user input, throw this instruction
 const menu =
     `\n
-There is no input OR your input is wrong. Date range from 2019-12-31 -  \n
+There is no input OR your input is wrong. \n
 Type: \n
 total YYYY-MM-DD (to see total COVID-19 case on that date) \n
 new YYYY-MM-DD (to see new COVID-19 cases on that date) \n
 totalChange YYYY-MM-DD YYYY-MM-DD (to see changes in total cases between those dates) \n
-newChange YYYY-MM-DD YYYY-MM-DD (to see changes in new cases between those dates) \n`
+newChange YYYY-MM-DD YYYY-MM-DD (to see changes in new cases between those dates) \n
+* Note: dates range from 2019-12-31 to 2020-07-12 \n`
 
 
 switch (command) {
@@ -52,6 +52,7 @@ switch (command) {
         console.log({ command })
         console.log({ date1 })
         console.log({ date2 })
+        console.log() //-> just to get space
 }
 
 
