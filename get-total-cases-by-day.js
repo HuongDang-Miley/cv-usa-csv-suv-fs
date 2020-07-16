@@ -11,8 +11,6 @@ const getTotalCasesByDay = function(date, data) {
 }
 
 
-
-
 if (typeof getTotalCasesByDay === 'undefined') {
   getTotalCasesByDay = undefined;
 }
